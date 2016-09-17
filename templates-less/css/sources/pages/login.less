@@ -1,0 +1,583 @@
+
+#body_login {
+
+.area {
+    width: 1170px;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+}
+.header {
+    background: url(img/header.jpg)top center no-repeat;
+    color: #fff;
+    padding: 3px 0px;
+}
+.header .logo {
+    background: url(img/logo.png) left center no-repeat;
+    font-family: 'Constantia';
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 14px 0px;
+}
+.header .logo div {
+	    padding-left: 130px;
+}
+.header .logo span {
+	    display: block;
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: normal;
+}
+.header .logo o {
+	    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 3px;
+    text-transform: initial;
+    display: block;
+    margin-top: -3px;
+}
+.header h3 {
+	    padding: 31px 0px;
+    padding-left: 53px;
+    display: inline-block;
+    vertical-align: top;
+    width: 700px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 24px;
+}
+.header h3 span {
+	    display: block;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.box1 {
+	background: url(img/box1.jpg)top center no-repeat;
+    color: #fff;
+}
+.box11 {
+	    width: 372px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+.box11 .hash {
+    background: url(img/hash.png) bottom center no-repeat;
+    font-family: 'Constantia';
+    font-weight: bold;
+    font-size: 26px;
+    padding-bottom: 15px;
+    padding-top: 55px;
+}
+.box11 p {
+    font-size: 24px;
+    padding: 23px 0px;
+    text-transform: lowercase;
+}
+.box11 h2 {
+	    font-size: 44px;
+		    margin-bottom: 3px;
+}
+.box11 h3 {
+	    font-size: 37px;
+		    margin-bottom: 3px;
+}
+.box11 h4 {
+	    font-size: 31px;
+		    margin-bottom: 3px;
+}
+.box11 h5 {
+    font-size: 33px;
+    font-weight: bold;
+	    margin-bottom: 3px;
+}
+.box1 .menu {
+    padding-top: 110px;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 47px;
+}
+
+.box1 .menu a {
+	    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid rgba(10, 164, 238, 0);
+    border-radius: 12px;
+	cursor: pointer;
+}
+.box1 .menu a.active {
+	border: 1px solid #0aa4ee;
+	color: #0aa4ee;
+}
+.box1 .menu a:hover {
+border: 1px solid #0aa4ee;
+	color: #0aa4ee;	
+}
+.lock {
+    background: url(img/lock.png)top center no-repeat;
+    width: 64px;
+    height: 64px;
+    margin-top: -32px;
+    position: absolute;
+    left: 48.4%;
+}
+.box2 {
+	background: url(img/box2.jpg)top center no-repeat;	
+}
+.box2 .form {
+padding-top: 77px;
+    text-align: center;
+}
+.box2 h3  {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 94px;
+}
+.box2 h3 span {
+	    display: block;
+    font-weight: normal;
+    text-transform: initial;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.form .login_input, .lost_pass_form  .login_input{
+	background: #a19efd;
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-top: 1px solid #000;
+    border-radius: 7px;
+    padding: 14px 25px;
+    margin-right: 70px;
+    display: inline-block;
+}
+::-webkit-input-placeholder {color:#fff;}
+::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
+:-moz-placeholder           {color:#fff;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#fff;}
+.login_button {
+	    font-size: 15px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url(img/login_button.png) center top no-repeat;
+    border: none;
+    padding: 18px 53px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.restore_pass1 {
+	    font-size: 14px;
+    color: #cccbff;
+    width: 108px;
+    border-bottom: 1px solid #cccbff;
+    margin-left: 570px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.restore_pass_form {
+    padding-top: 77px;
+    text-align: center;
+    display: none;
+}
+.lost_pass_form {}
+.submit_lost_pass {
+	    font-size: 14px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-transform: uppercase;
+    background: url(img/login_button.png) center top no-repeat;
+    border: none;
+    padding: 18px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.login_form_show {
+	    font-size: 14px;
+    color: #cccbff;
+    width: 89px;
+    border-bottom: 1px solid #cccbff;
+    margin-left: 445px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.box22 {
+	    padding-top: 98px;
+}
+.box22 h2 {
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 56px;
+}
+.box22 h2 span {
+	    display: block;
+    font-size: 20px;
+    text-transform: initial;
+    font-weight: normal;
+    padding-top: 15px;
+}
+.box221 {
+    width: 586px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 78px;
+    padding-left: 200px;
+}
+.box222 {
+	    width: 473px;
+    display: inline-block;
+    padding-top: 36px;
+    padding-bottom: 50px;
+}
+.box221 h4 {
+	    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+.box221 p {
+	    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 45px;
+}
+
+.box3 {
+    background: #f8f8f8;
+    padding-bottom: 30px;
+}
+.box3 h3 {
+	    font-weight: bold;
+    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 65px 0px;
+}
+.box3 .box31 {
+    background: url(img/box3.png) top center no-repeat;
+    text-align: center;
+    padding-top: 233px;
+    padding-bottom: 120px;
+}
+.box3 .box311 {
+	    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 337px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+.box3 h4 {
+	    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 40px 0px;
+}
+.box3 h4 span {
+	    display: block;
+    font-size: 18px;
+    text-transform: initial;
+    padding-top: 11px;
+}
+
+.box4 {
+    text-align: center;
+    background: url(img/box4.jpg) top center no-repeat;
+    padding-bottom: 46px;
+}
+.box4 .form {
+    padding-top: 77px;
+    text-align: center;
+}
+.box4 h3  {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 94px;
+}
+.box4 h3 span {
+	    display: block;
+    font-weight: normal;
+    text-transform: initial;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+
+.box5 {
+padding-bottom: 100px;
+}
+.box5_box {
+    text-align: center;
+    background: url(img/box5.jpg) top center no-repeat;
+    
+    margin: 0 auto;
+    padding: 0px 70px;
+    color: #fff;	
+}
+.box5 h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 75px;
+    text-align: center;
+}
+.box5 h3 {
+	font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+.box5 p  {
+	    font-size: 17px;
+    padding-bottom: 30px;
+}
+.box5_blocks {
+	    margin-bottom: 20px;
+}
+.box51 {
+	    width: 330px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 360px;
+}
+.box52 {
+    display: inline-block;
+    width: 496px;
+    vertical-align: middle;
+}
+.box52 span {
+	    font-size: 12px;
+}
+
+.box6 {
+	background: url(img/box6.png) 0px 269px no-repeat;
+}
+.box6 h2 {
+	    font-size: 34px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 81px 0px;
+}
+.box6_block {
+    background: url(img/box6_block.png) top center no-repeat;
+    padding-top: 195px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 77px;
+}
+.box6_block .box61 {
+	    display: inline-block;
+    vertical-align: top;
+    margin: 0px 25px;
+}
+
+
+.box7 {
+    padding-bottom: 90px;
+    background: #f6f6f6 url(img/box7.jpg) top center no-repeat;
+}
+
+.box7 .bx-wrapper {
+    width: 970px;
+    max-width: 970px !important;
+    height: auto;
+}
+.box7 .bx-wrapper .bx-viewport {
+height: auto !important;	
+}
+.box7 h2 {
+	    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 80px 0px;
+}
+.reward_navigate {
+	    position: relative;
+}
+.reward_navigate a {
+	    width: 67px;
+    height: 67px;
+    display: block;
+}
+.reward_navigate div {
+	width: 67px;
+    height: 67px;
+    position: absolute;
+    top: 200px;
+}
+.reward_navigate #slider-next {
+	    background: url(img/next.png);
+}
+.reward_navigate #slider-prev {
+	      background: url(img/prev.png);
+    right: 0px;
+}
+.reward_slide {}
+.reward_slide .one_reward {
+    margin-top: 90px;
+    text-align: center;
+    color: #fff;
+    background: #0ca0ea;
+}
+.one_reward .one_reward_ava {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: -90px;
+    box-shadow: 3px 3px 3px rgba(38, 18, 14, 0.24);
+}
+.one_reward h3 {
+font-size: 22px;
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 20px;
+    line-height: 23px;
+
+}
+.one_reward .one_reward_transit {
+	    background: url(img/one_reward_transit.png) top center no-repeat;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 47px;
+    padding-bottom: 53px;
+}
+.one_reward .one_reward_transit span {
+	    display: block;
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 5px;
+}
+
+.box8 {
+	    padding-bottom: 100px;
+}
+.box8 h2 {
+	    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0px 60px 0px;
+}
+.box8 .box8_box {
+	    margin: 0 auto;
+    width: 970px;
+}
+.box8 .box81 {
+	    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 26px;
+}
+.box8 .box82 {
+	    width: 670px;
+    display: inline-block;
+    vertical-align: top;
+}
+.box82 div {
+display: none;	
+}
+.box81 .active {
+	    background: #615dbb url(img/row.png) 93% center no-repeat;
+    color: #fff;
+    border-radius: 7px;
+}
+.box81 button {
+	    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    display: block;
+    padding: 18px 34px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.box82 h3 {
+	    padding-top: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+.box82 p {}
+.box9 {
+	    text-align: center;
+    font-size: 14px;
+    color: #7d7d7d;
+    padding: 62px 0px;
+}
+.box1 .lipp {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #fff;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+.paralax {
+	position: absolute;
+    z-index: 0;
+}
+.p1 {
+    width: 307px;
+    height: 432px;
+    background: url(img/p1.png);
+    top: 2127px;
+}
+.p2 {
+	    width: 259px;
+    height: 516px;
+    background: url(img/p2.png);
+    top: 3000px;
+    right: 0px;
+}
+.p3 {
+	    width: 322px;
+    height: 637px;
+    background: url(img/p3.png);
+    top: 3965px;
+}
+.p4 {
+	    width: 308px;
+    height: 642px;
+    background: url(img/p4.png);
+    top: 5050px;
+    right: 0px;
+}
+
+#error {
+  font-family: 'PT Sans2-B';
+  width: 400px;
+  font-size: 24px;
+  color: #43629e;
+  font-weight: normal;
+  text-align: center;
+}
+}

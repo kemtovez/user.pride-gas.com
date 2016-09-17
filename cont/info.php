@@ -1,0 +1,53 @@
+<?php
+$id = $_SESSION['id'];
+$rs = mysqli_query($link, "SELECT * FROM `users` WHERE id='$id'");
+while($row = mysqli_fetch_array($rs, MYSQLI_ASSOC)) {
+$my_id = $row['id']; 
+$my_email = $row['email']; 
+$my_login = $row['login']; 
+$my_pass = $row['pass']; 
+$my_name = $row['name']; 
+$my_post_name = $row['post_name']; 
+$my_post_name2 = $row['post_name2']; 
+$my_sex = $row['sex'];
+$my_tel = $row['tel'];
+$my_skype = $row['skype'];
+$my_country = $row['country'];
+$my_sity = $row['sity']; 
+$my_ava = $row['ava'];
+$my_profile_text = $row['profile_text']; 
+$my_profile_video = $row['profile_video'];
+$my_vk = $row['vk']; 
+$my_tw = $row['tw']; 
+$my_fb = $row['fb']; 
+$my_yt = $row['yt']; 
+$my_od = $row['od']; 
+$my_in = $row['ins']; 
+$my_magaz = $row['magaz']; 
+$my_grup = $row['grup'];
+$my_root = $row['root'];
+$my_ref_id = $row['ref_id'];
+$my_act_id = $row['act_id'];
+$my_act_number = $row['act_number'];
+$my_act_url = $row['act_url'];
+$my_data_bd = $row['data_bd'];
+$my_data_reg = $row['data_reg'];
+$my_data_off = $row['data_off'];
+$my_task1 = $row['tasks1'];
+$my_task2 = $row['tasks2'];
+$my_task11 = $row['tasks11'];
+$my_task12 = $row['tasks12'];
+$my_activate_partners = $row['activate_partners'];
+$my_all_partners = $row['all_partners'];
+$my_transit = $row['transit'];
+$my_activate_chek = $row['activate_chek'];
+$my_help = $row['help'];
+$my_first_open = $row['first_open'];
+$my_form = $row['form'];
+$my_balls = $row['balls'];
+$my_data_add_bulls = $row['data_add_bulls'];
+
+$my_show_in_login = $row['show_in_login'];
+$my_new_lending1 = $row['new_lending1'];
+$my_new_lending1_video = $row['new_lending1_video'];
+}
