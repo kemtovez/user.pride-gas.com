@@ -2,7 +2,7 @@
 $db_host = "localhost";
 $db_user = "root";
 $db_password = "";
-$database = "lamara_freebiz";
+$database = "pridegas";
 $link = mysqli_connect($db_host, $db_user, $db_password, $database);
 
 if (mysqli_connect_errno()) {

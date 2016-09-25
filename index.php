@@ -11,6 +11,7 @@ foreach ($query_params as $query_param)
   if ($query_param != "")
   $params[] = $query_param;
 require_once ("cont/bd_user.php");
+require_once ("cont/load_less.php");
 require_once ("cont/settings.php");
 if (isset($params[0])){
 if (file_exists("modules/".$params[0].".php")) {

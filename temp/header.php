@@ -24,5 +24,12 @@
 	<script language="javascript" type="text/javascript" src="../js/fancybox.js"></script>
 	<script language="javascript" type="text/javascript" src="../js/ZeroClipboard.js"></script>
 	<script language="javascript" type="text/javascript" src="../js/jquery.tipsy.js"></script>
-
+	<script language="javascript" type="text/javascript" src="../js/jquery.datetimepicker.full.min.js"></script>
+	<!--<script language="javascript" type="text/javascript" src="../js/croppic.min.js"></script>-->
+	<!-- Modal -->
+	<script language="javascript" type="text/javascript" src="../js/modal/modernizr.custom.js"></script>
+	<!-- Common -->
+	<script language="javascript" type="text/javascript" src="../js/common.js"></script>
 </head>
+<body>
+<div style="display: none;"><div id="error_popup"></div></div>

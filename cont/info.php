@@ -1,53 +1,44 @@
 <?php
 $id = $_SESSION['id'];
-$rs = mysqli_query($link, "SELECT * FROM `users` WHERE id='$id'");
+$rs = mysqli_query($link, "SELECT * FROM `srm_users` WHERE id='$id'");
 while($row = mysqli_fetch_array($rs, MYSQLI_ASSOC)) {
 $my_id = $row['id']; 
-$my_email = $row['email']; 
-$my_login = $row['login']; 
-$my_pass = $row['pass']; 
-$my_name = $row['name']; 
-$my_post_name = $row['post_name']; 
-$my_post_name2 = $row['post_name2']; 
-$my_sex = $row['sex'];
+$my_email = $row['email'];
+$my_first_uid = $row['uid'];
+$my_name = $row['name'];
 $my_tel = $row['tel'];
-$my_skype = $row['skype'];
-$my_country = $row['country'];
-$my_sity = $row['sity']; 
-$my_ava = $row['ava'];
-$my_profile_text = $row['profile_text']; 
-$my_profile_video = $row['profile_video'];
-$my_vk = $row['vk']; 
-$my_tw = $row['tw']; 
-$my_fb = $row['fb']; 
-$my_yt = $row['yt']; 
-$my_od = $row['od']; 
-$my_in = $row['ins']; 
-$my_magaz = $row['magaz']; 
-$my_grup = $row['grup'];
-$my_root = $row['root'];
-$my_ref_id = $row['ref_id'];
-$my_act_id = $row['act_id'];
-$my_act_number = $row['act_number'];
-$my_act_url = $row['act_url'];
+$my_pass = $row['pass'];
+$my_region = $row['region'];
+$my_sity = $row['sity'];
 $my_data_bd = $row['data_bd'];
-$my_data_reg = $row['data_reg'];
-$my_data_off = $row['data_off'];
-$my_task1 = $row['tasks1'];
-$my_task2 = $row['tasks2'];
-$my_task11 = $row['tasks11'];
-$my_task12 = $row['tasks12'];
-$my_activate_partners = $row['activate_partners'];
-$my_all_partners = $row['all_partners'];
-$my_transit = $row['transit'];
-$my_activate_chek = $row['activate_chek'];
-$my_help = $row['help'];
-$my_first_open = $row['first_open'];
-$my_form = $row['form'];
-$my_balls = $row['balls'];
-$my_data_add_bulls = $row['data_add_bulls'];
-
-$my_show_in_login = $row['show_in_login'];
-$my_new_lending1 = $row['new_lending1'];
-$my_new_lending1_video = $row['new_lending1_video'];
+$my_sto_id = $row['sto_id'];
+$my_send_email = $row['send_email'];
+$my_send_sms = $row['send_sms'];
 }
+$rs2 = mysqli_query($link, "SELECT * FROM `srm_users_cars` WHERE id_user='$my_id' AND `is_main`='1'");
+$kol_auto = mysqli_num_rows($rs2);
+
+if($kol_auto>0) {
+    while ($row2 = mysqli_fetch_array($rs2, MYSQLI_ASSOC)) {
+        $my_id_car = $row2['id'];
+        $my_uid_car = $row2['uid'];
+        $my_type_car = $row2['type_car'];
+        $my_model_car = $row2['model_car'];
+        $my_year_car = $row2['year_car'];
+        $my_type_motor = $row2['type_motor'];
+        $my_size_motor = $row2['size_motor'];
+        $my_power_motor = $row2['power_motor'];
+        $my_garant_book = $row2['garant_book'];
+        $my_discount = $row2['discount'];
+        $my_is_main_car = $row2['is_main'];
+    }
+} else {
+   // header("Location: /add_car");
+}
+$rs3 = mysqli_query($link, "SELECT * FROM `srm_sto` WHERE id='$my_sto_id'");
+while ($row3 = mysqli_fetch_array($rs3, MYSQLI_ASSOC)) {
+    $my_sto_name = $row3['name'];
+}
+//------------------ Post_need_block
+$rs4 = mysqli_query($link, "SELECT * FROM `srm_works` WHERE id_user='$my_id' AND `id_car`='$my_id_car' AND `need_post`='1'");
+$kol_need_post = mysqli_num_rows($rs4);

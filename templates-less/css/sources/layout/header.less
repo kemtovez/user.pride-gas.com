@@ -1,89 +1,87 @@
 /* Header */
-#top_block {
-    background: url(img/top_menu_bg.png) top center no-repeat;
-	#logo {
-    display: inline-block;
-    vertical-align: top;
-    background: url(img/logo2.png) top center no-repeat;
-    margin: 13px 0px;
-		a {
-			display: block;
-			width: 270px;
-			height: 86px;
-			}
-	}
-#top_menu {
-    width: 786px;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 110px;
-	ul {
-		    text-align: center;
-		li {
-			display: inline-block;
-			font-size: 0px;
-			a {
-		color: #fff;
-		display: block;
-		padding: 70px 0px 35px 0px;
-	    font-size: @font-size;
-				}
-			}
-
-#top_menu_1 {
-width: 160px;
-height: 124px;
-background: url(img/top_menu_1.png) top center no-repeat;
-&:hover, &.act_top_menu {
-background: url(img/top_menu_1_h.png) top center no-repeat;
-}
-}
-#top_menu_2 {
-width: 171px;
-height: 125px;
-background: url(img/top_menu_2.png) top center no-repeat;
-&:hover, &.act_top_menu {
-background: url(img/top_menu_2_h.png) top center no-repeat;
-}
-}
-#top_menu_3 {
-width: 131px;
-height: 121px;
-background: url(img/top_menu_3.png) top center no-repeat;
-&:hover, &.act_top_menu {
-background: url(img/top_menu_3_h.png) top center no-repeat;
-}
-}
-#top_menu_4 {
-width: 182px;
-height: 117px;
-background: url(img/top_menu_4.png) top center no-repeat;
-&:hover, &.act_top_menu {
-background: url(img/top_menu_4_h.png) top center no-repeat;
-}
-}
-#top_menu_5 {
-width: 142px;
-height: 109px;
-background: url(img/top_menu_5.png) top center no-repeat;
-&:hover, &.act_top_menu {
-background: url(img/top_menu_5_h.png) top center no-repeat;
-}
+#error_popup {
+  padding: 10px;
+  margin: 10px;
 }
 
+header {
+  background: #223340;
+  padding: 18px 0px;
+  .logo {
+    background: url(img/logo.png) center no-repeat;
+    width: 85px;
+    height: 85px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .menu_box {
+    width: 500px;
+    padding-left: 60px;
+    display: inline-block;
+    h3 {
+      color: #ffffff;
+      font-size: 20px;
+      font-style: italic;
+      padding: 12px 0px;
+       a {
+         color: #a0cae7;
+         text-decoration: underline;
+         font-style: normal;
+         font-size: 14px;
+         float: right;
+         &:hover {
+           text-decoration: none;
+         }
+       }
+    }
+    ul {
+      font-size: 20px;
+      li {
+        display: inline-block;
+        padding-right: 30px;
+        a {
+          color: #a0cae7;
+          text-decoration: underline;
+          padding: 12px 0px;
+          display: block;
+        }
+      }
+    }
+  }
+  .shuse_car_box {
+    display: inline-block;
+    width: 320px;
+    float: right;
+    p {
+      color: #ffffff;
+      padding: 7px 0px 25px 0px;
+      text-align: right;
+      font-size: 18px;
+    }
+    span {
+      color: #a0cae7;
+      width: 80px;
+      display: inline-block;
+      text-align: center;
+    }
+    .shuse_car_block {
+      display: inline-block;
+      width: 235px;
+      select {
+        background: #ffffff;
+        width: 100%;
+        padding: 7px;
+        border-radius: 5px;
+        color: @text-color;
+      }
+       a {
+         color: #a0cae7;
+         text-decoration: underline;
+       }
+    }
+  }
+
 }
-}
-&:after {
-    content: '';
-    display: block;
-    min-width: 1200px;
-    max-width: 1920px;
-    background: url(img/top_before.png) top center no-repeat;
-    height: 62px;
-    position: absolute;
-    top: 87px;
-    z-index: 1;
-    width: 100%;
-}
-}
+
+
 
